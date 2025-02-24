@@ -27,6 +27,5 @@ if (tipoDeCombustivel === 'Etanol') {
     console.log("Tipo de combustível inválido. Escolher 'Etanol' ou 'Gasolina'");
 }
 
-if (custoTotal) {
-    console.log('O custo total da viagem será de R$ ${custoTotal.toFixed(2)}');
-}
+console.log('O valor total da viagem será de R$' + custoTotal.toFixed(2));
+
