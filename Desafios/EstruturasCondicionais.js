@@ -14,7 +14,3 @@ const tipoDeCombustivel = "Gasolina"; // meu carro utiliza gasolina
 const consumoMedioKmPorLitro = 12; // o carro faz 12km por litro
 const distanciaKm = 500; // distancia da viagem em km
 
-//Cálculo
-const litrosNecessarios = distanciaKm / consumoMedioKmPorLitro;
-
-let custoTotal;
