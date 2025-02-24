@@ -14,3 +14,19 @@ const tipoDeCombustivel = "Gasolina"; // meu carro utiliza gasolina
 const consumoMedioKmPorLitro = 12; // o carro faz 12km por litro
 const distanciaKm = 500; // distancia da viagem em km
 
+//Cálculos
+const litrosNecessarios = distanciaKm / consumoMedioKmPorLitro;
+
+let custoTotal;
+
+if (tipoDeCombustivel === 'Etanol') {
+    custoTotal = litrosNecessarios * precoEtanol;
+} else if (tipoDeCombustivel === 'Gasolina') {
+    custoTotal = litrosNecessarios * precoGasolina;
+} else {
+    console.log("Tipo de combustível inválido. Escolher 'Etanol' ou 'Gasolina'");
+}
+
+if (custoTotal) {
+    console.log('O custo total da viagem será de R$ ${custoTotal.toFixed(2)}');
+}
