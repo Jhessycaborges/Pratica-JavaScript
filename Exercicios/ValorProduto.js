@@ -8,8 +8,8 @@
 // Formas de pagamento
 const formaDePag1 = 'Dinheiro ou Pix';
 const formaDePag2 = 'Débito';
-const formaDePag3 = '2x';
-const formaDePag4 = '3x ou mais';
+const formaDePag3 = 'Cartão 2x';
+const formaDePag4 = 'Cartão 3x ou mais';
 
 // Descontos e Juros
 const desconto1 = 0.15;
@@ -20,14 +20,8 @@ const desconto4 = 0.10;
 // Preço do produto
 const precoProduto = 379;
 
-let formaDePag = ' ';
+let formaDePagamento = ' ';
 
-if (formaDePag === formaDePag1) {
-    console.log(precoProduto - desconto1);
-} else if (formaDePag === formaDePag2) {
-    console.log(precoProduto - desconto2);
-} else if (formaDePag === formaDePag3) {
-    console.log(precoProduto - desconto3);
-} else {
-    console.log(precoProduto * desconto4);
+if (formaDePagamento === formaDePag1) {
+    console.log(precoProduto - (precoProduto * desconto1));
 }
