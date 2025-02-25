@@ -11,9 +11,20 @@
     - Média acima de 7, passou de semestre;
 */
 
+const ehMenorQue5 = 'Reprovado'
+const entre5e7 = 'Recuperação'
+const acimaDe7 = 'Aprovado'
+
 const nota1 = 5.9;
 const nota2 = 8.4;
 const nota3 = 6.7;
+const classificacao = ' ';
 
-let media;
+const media = (nota1 + nota2 + nota3) / 3
 
+let mediaFinal;
+
+if (mediaFinal < 5) {
+    media = nota1 + nota2 + nota3 / 3
+    console.log('O aluno está ' + ehMenorQue5)
+}
