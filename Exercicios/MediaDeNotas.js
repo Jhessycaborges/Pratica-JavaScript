@@ -23,14 +23,15 @@ const nota3 = 6.7;
 
 // Cálculo da média
 const media = (nota1 + nota2 + nota3) / 3;
-console.log('Média do aluno: ${media.toFixed(2)}');
 
 let classificacao;
 
-if (mediaFinal < 5) {
-    console.log('O aluno está ' + ehMenorQue5)
-} else if (mediaFinal <= 5 >= 7) {
-    console.log('O aluno está ' + entre5e7)
+if (media < 5) {
+    classificacao = ehMenorQue5;
+} else if (media >= 5 && media <= 7) {
+    classificacao = entre5e7;
 } else {
-    console.log('O aluno está ' + acimaDe7)
+    classificacao = acimaDe7;
 }
+
+console.log(classificacao)
