@@ -20,8 +20,14 @@ const desconto4 = 0.10;
 // Preço do produto
 const precoProduto = 379;
 
-let formaDePagamento = ' ';
+let formaDePagamento = 'Dinheiro ou Pix';
 
 if (formaDePagamento === formaDePag1) {
     console.log(precoProduto - (precoProduto * desconto1));
+} else if (formaDePagamento === formaDePag2) {
+    console.log(precoProduto - (precoProduto * desconto2));
+} else if (formaDePagamento === formaDePag3) {
+    console.log(precoProduto - (precoProduto * desconto3));
+} else {
+    console.log(precoProduto - (precoProduto * desconto4));
 }
