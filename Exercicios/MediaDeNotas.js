@@ -15,16 +15,19 @@ const ehMenorQue5 = 'Reprovado'
 const entre5e7 = 'Recuperação'
 const acimaDe7 = 'Aprovado'
 
-const nota1 = 5.9;
+const nota1 = 8.9;
 const nota2 = 8.4;
 const nota3 = 6.7;
-const classificacao = ' ';
+const mediaFinal = ' ';
 
 const media = (nota1 + nota2 + nota3) / 3
 
-let mediaFinal;
+let classificacao;
 
 if (mediaFinal < 5) {
-    media = nota1 + nota2 + nota3 / 3
     console.log('O aluno está ' + ehMenorQue5)
+} else if (mediaFinal <= 5 >= 7) {
+    console.log('O aluno está ' + entre5e7)
+} else {
+    console.log('O aluno está ' + acimaDe7)
 }
