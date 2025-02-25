@@ -20,7 +20,6 @@ const acimaDe7 = 'Aprovado';
 const nota1 = 5.9;
 const nota2 = 8.4;
 const nota3 = 6.7;
-const mediaFinal = ' ';
 
 const media = (nota1 + nota2 + nota3) / 3
 
