@@ -20,7 +20,7 @@ const desconto4 = 0.10;
 // Preço do produto
 const precoProduto = 379;
 
-let formaDePagamento = 'Cartão 2x';
+let formaDePagamento = 'Cartão 3x ou mais';
 
 if (formaDePagamento === formaDePag1) {
     console.log(precoProduto - (precoProduto * desconto1));
