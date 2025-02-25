@@ -11,11 +11,13 @@
     - Média acima de 7, passou de semestre;
 */
 
-const ehMenorQue5 = 'Reprovado'
-const entre5e7 = 'Recuperação'
-const acimaDe7 = 'Aprovado'
+// Classificações
+const ehMenorQue5 = 'Reprovado';
+const entre5e7 = 'Recuperação';
+const acimaDe7 = 'Aprovado';
 
-const nota1 = 8.9;
+// Notas do aluno
+const nota1 = 5.9;
 const nota2 = 8.4;
 const nota3 = 6.7;
 const mediaFinal = ' ';
