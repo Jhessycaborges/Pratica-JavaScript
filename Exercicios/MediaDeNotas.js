@@ -21,7 +21,9 @@ const nota1 = 5.9;
 const nota2 = 8.4;
 const nota3 = 6.7;
 
-const media = (nota1 + nota2 + nota3) / 3
+// Cálculo da média
+const media = (nota1 + nota2 + nota3) / 3;
+console.log('Média do aluno: ${media.toFixed(2)}');
 
 let classificacao;
 
