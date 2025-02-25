@@ -12,10 +12,11 @@
 // Acima de 40 = Obesidade morbida;
 
 const paciente = 'Jhessyca';
-const peso = 73;
+const peso = 72;
 const altura = 1.74;
 
 const IMC = peso / (altura * altura);
+console.log(IMC.toFixed(2))
 
 if (IMC < 18.5) {
     console.log('Abaixo do peso');
