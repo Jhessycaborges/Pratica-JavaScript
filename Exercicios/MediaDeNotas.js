@@ -23,6 +23,7 @@ const nota3 = 6.7;
 
 // Cálculo da média
 const media = (nota1 + nota2 + nota3) / 3;
+console.log('Media Final: ' + media)
 
 let classificacao;
 
