@@ -29,5 +29,5 @@ if (formaDePagamento === formaDePag1) {
 } else if (formaDePagamento === formaDePag3) {
     console.log(precoProduto - (precoProduto * desconto3));
 } else {
-    console.log(precoProduto - (precoProduto * desconto4));
+    console.log(precoProduto + (precoProduto * desconto4));
 }
