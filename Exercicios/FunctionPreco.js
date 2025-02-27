@@ -3,18 +3,24 @@
 // 3 - Cartao 2x: preco normal (sem juros)
 // 4 - Cartao 3x ou mais: 10% de juros
 
-function valorProduto(preco, formaDePagamento) {
-    if (formaDePagamento === 'Dinheiro ou Pix') {
-        return preco - (preco * 0.15);
-    } else if (formaDePagamento === 'Debito') {
-        return preco - (preco * 0.10);
-    } else if (formaDePagamento === 'Cartao 2x') {
-        return preco;
-    } else (formaDePagamento === 'Cartao 3x ou mais'); {
-        return preco + (preco * 0.10);
-    }
+function aplicarDesconto(preco, desconto) {
+    return preco - (preco * desconto);
+}
+
+function aplicarJuros(preco, juros) {
+    return preco + (preco * juros);
 }
 
 const preco = 379;
-const formaDePagamento = 'Cartao 3x ou mais';
-console.log(valorProduto(preco, formaDePagamento));
+const formaDePagamento = 4;
+
+if (formaDePagamento === 1) {
+    console.log(preco - (preco * 0.15));
+} else if (formaDePagamento === 2) {
+    console.log(preco - (preco * 0.10));
+} else if (formaDePagamento === 3) {
+    console.log(preco);
+} else {
+    console.log(preco + (preco * 0.10));
+}
+
