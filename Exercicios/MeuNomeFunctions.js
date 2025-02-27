@@ -1,18 +1,14 @@
 //com parâmetro
 function escrevaMeuNome(nome) {
-    console.log('Meu nome é ' + nome)
+    return 'Meu nome é ' + nome;
 }
-
-escrevaMeuNome('Jhessyca');
 
 function VerificadorDeIdade(idade) {
     if (idade > 18) {
-        console.log('Maior de idade');
+        console.log(escrevaMeuNome('Jhessyca') + ' e sou maior de idade');
     } else {
-        console.log('Menor de Idade');
+        console.log(escrevaMeuNome('Jhessyca') + ' e sou menor de Idade');
     }
 }
 
-VerificadorDeIdade(); //acrescentar o parametro para verificar a idade
-
-//sem parâmetro
+VerificadorDeIdade(); //acrescentar o parametro para verificar a
