@@ -1,3 +1,5 @@
+// Conceito básico de Function
+
 // Function sem retorno TEM parametros
 function MeuNome(name) {
     console.log('Seu nome é ' + name);
