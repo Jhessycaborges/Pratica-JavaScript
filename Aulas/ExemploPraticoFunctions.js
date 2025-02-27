@@ -18,9 +18,12 @@ function classificarIMC(IMC) {
     }
 }
 
-const paciente = 'Jhessyca';
-const peso = 72;
-const altura = 1.74;
+function main() {
+    const peso = 72;
+    const altura = 1.74;
 
-const IMC = calcularIMC(peso, altura);
-console.log(classificarIMC(IMC));
+    const IMC = calcularIMC(peso, altura);
+    console.log(classificarIMC(IMC));
+}
+
+main();
